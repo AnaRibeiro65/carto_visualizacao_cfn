@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root{
+    --cor-azul-ro:#8bacda;
+    --cor-azul-clara:#00fff7;
+    --cor-preto-azul:#0d192b;
+    --cor-azul-forte: #14253d;
+    --cor-azul: #4f6b93;
+    --cor--branco:#ffffff;
+}
+
+body{
+    background: var(--cor-preto-azul);
+}
+
+main{
+    background: var(--cor-azul-forte);
+    color: var(--cor--branco);
+    max-width: 320px;
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.caixa{
+    padding: 1em;
+}
+
+.pri-imga{
+    width: 280px;
+    border-radius: 1em;
+    text-align: center;
+    position: relative;
+}
+.image-top,h1,strong:hover{
+  cursor: pointer;
+  transition: 1s;
+}
+
+.ovrlay{
+    background-color: var(--cor-azul-clara);
+    opacity: 60%;
+    position: absolute;
+    top: 17px;
+    bottom: 210px; 
+    left: 17px;
+    right: 22px;  
+    border-radius: 1rem;
+    display: none; 
+}
+
+.segu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--cor--branco);
+}
+
+.image-top:hover .ovrlay{ 
+     display: block; 
+     transition: 50ms;
+}
+
+.azul{
+    margin: 0.5em 0;
+    font-size: 300;
+    color: var(--cor--branco);
+}
+.azul:hover{
+    color: var(--cor-azul-clara);
+}
+
+
+.texto{
+    color: var(--cor-azul);
+    margin: 0.2em;
+}
+
+.divi{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.6em 0;
+    border-bottom: solid 1px var(--cor-azul);
+}
+
+.duas{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.cor{
+    color: var(--cor-azul-clara);
+}
+
+.terceira{
+    display: flex;
+    margin-top: 0.5em;
+}
+
+.segunda-imag{
+    width: 40px;
+    border: solid 1px var(--cor--branco);
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+strong{
+    color: var(--cor--branco);
+}
+
+strong:hover{
+    color: var(--cor-azul-clara);
+  }
+
+@media screen and (max-width: 320px) {
+   .pri-imga{
+    width: 200px;
+   }
+}  
